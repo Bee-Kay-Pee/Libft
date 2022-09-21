@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpercy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 14:25:54 by rpercy            #+#    #+#             */
-/*   Updated: 2022/09/21 11:09:37 by rpercy           ###   ########.fr       */
+/*   Created: 2022/09/21 11:10:36 by rpercy            #+#    #+#             */
+/*   Updated: 2022/09/21 11:14:20 by rpercy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* sticks src onto the end of dst until dst+src string had reached 
- * dstsize bytes long.**/
 
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+	}
+	return (c);
+}

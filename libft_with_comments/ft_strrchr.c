@@ -1,16 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpercy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 14:25:54 by rpercy            #+#    #+#             */
-/*   Updated: 2022/09/21 11:09:37 by rpercy           ###   ########.fr       */
+/*   Created: 2022/09/21 12:08:02 by rpercy            #+#    #+#             */
+/*   Updated: 2022/09/21 13:17:14 by rpercy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* sticks src onto the end of dst until dst+src string had reached 
- * dstsize bytes long.**/
 
+char	*ft_strrchar(const char *s, int c);
+{
+	int	i;
+
+	i = ft_strlen(s);
+	/*i is t the end of the string this time*/
+	while (i >= 0)
+	/*while we havent reached the beginning of the string*/
+	{
+		if(s[i] == (char)c)
+			return ((char *)(&s[i]));
+		i--;
+		/*moving backwards through string*/
+	}
+	return (NULL);
+}
