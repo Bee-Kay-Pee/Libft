@@ -7,3 +7,5 @@ The libft folder passed all norminette / francinette checkers as of November 202
 
 libft_with_comments is my own notes and my own take on each line of code and I cant garentee that its corrrect. Feel free to let me know if you belive any of the notes are written incorrectly and I can update as to help any future students hoping to understand each area of the Libft project.
 
+Please also not that as per the schools norm, you should not have comments withing a function and you should not have comments within your make file or header file. I have them in two seperate files to save confusion when I was working on my project.
+

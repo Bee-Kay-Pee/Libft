@@ -11,15 +11,26 @@
 # **************************************************************************** #
 /* A Makefile is used to compile your source files to the required output*/
 
-/* the first section of this makefile is declaring 4 different variables.*/ 
+/* the first section of this is defining constants within the makefile 
+that communicate to 'make' on how we want to compile these files '*/ 
 NAME		= 	libft.a
-/* */
+/* We are defining the variable NAME with the value libft.a */
+
 CC 			=	gcc
-/* CC is macro for the c compiler and here it is set to the 
-* GNU Compiler Collection, or gcc */
+/* CC is macro for the c compiler and here it is set to the GNU Compiler Collection, or gcc */
+
 CFLAGS = -Wall -Wextra -Werror -c
-/* CFLAGS
+/* CFLAGS is a list of flags to pass the compilation command.
+* -Wall: Enable most warning messages.
+* -Wextra: Enable some extra warning messages not covered by -Wall.
+* -Werror: Treat warnings as errors, causing the compilation to fail if there are any warnings.
+* -c: Compile the source files into object files but do not link. 
+* This is needed when creating a library. */
+
 RM = rm -f
+*/ : This variable is used to define the command for removing files. 
+* In this case, it's using the rm command with the -f flag to force the removal 
+* of files without prompting. *\
 
 SRCS		= 	ft_isalpha.c \
 				ft_isdigit.c \
